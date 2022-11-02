@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+        <title>
+          Material Dashboard 2 by Creative Tim
+        </title>
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+        <!-- Nucleo Icons -->
+        <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+        <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <!-- CSS Files -->
+        <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+      </head>
+  <body>
+    <div class="container tm-mt-big tm-mb-big">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="tm-block-title d-inline-block">Thêm sản phẩm</h2>
+                </div>
+              </div>
+              <div class="row tm-edit-product-row">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                  <form action="" class="tm-edit-product-form">
+                    <div class="form-group mb-3">
+                      <label for="name">Tên sản phẩm
+                      </label>
+                      <input id="name" name="name" type="text" class="form-control validate bg-light" required="" >
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="description">Mô tả</label>
+                      <textarea class="form-control validate bg-light" rows="3" required=""></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="category">Danh mục</label>
+                      <select class="custom-select tm-select-accounts bg-light" id="category">
+                        <option selected="">Chọn danh mục</option>
+                        <option value="1">Tươi</option>
+                        <option value="2">Oganic</option>
+                        <option value="3">Qua chế biến</option>
+
+                      </select>
+                    </div>
+                    <div class="row">
+                        <div class="form-group mb-3 col-xs-12 col-sm-6">
+                            <label for="expire_date">Giá
+                            </label>
+                            <input id="expire_date" name="expire_date" type="text" class="form-control validate hasDatepicker bg-light" data-large-mode="true">
+                          </div>
+                          <div class="form-group mb-3 col-xs-12 col-sm-6">
+                            <label for="stock">Tồn kho
+                            </label>
+                            <input id="stock" name="stock" type="text" class="form-control validate bg-light" required="">
+                          </div>
+                    </div>
+                    
+                </form></div>
+                <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                  <div class="tm-product-img-dummy mx-auto">
+                    <i class="fas fa-cloud-upload-alt tm-upload-icon" onclick="document.getElementById('fileInput').click();"></i>
+                  </div>
+                  <div class="custom-file mt-3 mb-3">
+                    <input id="fileInput" type="file" style="display:none;">
+                    <input type="button" class="btn btn-primary btn-block mx-auto" value="TẢI ẢNH LÊN" onclick="document.getElementById('fileInput').click();">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-block text-uppercase">Add Product Now</button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+  </body>
+</html>
